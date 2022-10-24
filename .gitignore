@@ -4,5 +4,6 @@
 .editorconfig
 .vscode/*
 
-# framework
+# npm
+package-lock.json
 /node_modules

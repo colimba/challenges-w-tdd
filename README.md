@@ -1,6 +1,7 @@
 # Acerca de tdd-training
 
 Prácticas con TDD haciendo retos propuestos por [adventjs](https://adventjs.dev/).
+Dependencia para ejecución de test 👉 [vitest](https://vitest.dev/) `npm run test` 🚀 
 
 ## 1. [Contando ovejas para dormir](https://adventjs.dev/challenges/01) (sheepCounter.js)
 Considera una lista/array de ovejas. Cada oveja tiene un nombre y un color. Haz una función que devuelva una lista con todas las ovejas que sean de color **rojo** y que además su nombre contenga tanto las letras **n** y **a**, sin importar el orden, las mayúsculas o espacios.
