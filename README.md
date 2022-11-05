@@ -163,7 +163,7 @@ El resultado tiene que ser **un array con dos números.**
 
 Una vez que tengas el resultado... ¿cómo podrías hacer que fuese lo más óptimo posible para **no tener que recorrer las mismas situaciones dos veces** 🤔?
 
-## 6. [Buscando en el almacén...](https://adventjs.dev/challenges/07) (stockFinder.js)
+## 7. [Buscando en el almacén...](https://adventjs.dev/challenges/07) (stockFinder.js)
 Mi amigo Dani está trabajando en una tienda y con la llegada de las navidades tiene el almacén hecho un desastre y no encuentra nada.
 
 Vamos a crear una función `contains` que recibe dos parámetros: un objeto que define el almacén y el producto que buscamos.
@@ -204,3 +204,30 @@ contains(otroAlmacen, 'gameboy') // false
 ```
 
 Ten en cuenta que la tienda es enorme. Tiene diferentes almacenes y, como has visto en los ejemplos, cada uno puede tener diferentes organizaciones. **Lo importante es buscar que el producto está en los almacenes.**
+
+## 8. [La locura de las criptomonedas](https://adventjs.dev/challenges/08) (maxProfit.js)
+Invertir en criptomonedas es casi un deporte de riesgo. El otro día hackearon Bitmart y ha hecho que el valor de Bitcoin, y otras monedas, bajase un 25%.
+
+Vamos a escribir una función que reciba la lista de precios de una criptomoneda en un día y debemos devolver la ganancia máxima que podríamos sacar si compramos y vendemos la inversión el mismo día.
+
+La lista de precios es un array de números y representa el tiempo de izquierda a derecha. **Por lo que ten en cuenta que no puedes comprar a un precio que esté a la derecha de la venta y no puedes vender a un precio que esté a la izquierda de la compra.**
+
+Por ejemplo:
+
+```js
+const pricesBtc = [39, 18, 29, 25, 34, 32, 5]
+maxProfit(pricesBtc) // -> 16 (compra a 18, vende a 34)
+
+const pricesEth = [10, 20, 30, 40, 50, 60, 70]  
+maxProfit(pricesEth) // -> 60 (compra a 10, vende a 70)
+```
+
+**Si ese día no se puede sacar ningún beneficio, tenemos que devolver `-1` para evitar que hagamos una locura:**
+
+```js
+const pricesDoge = [18, 15, 12, 11, 9, 7]
+maxProfit(pricesDoge) = // -> -1 (no hay ganancia posible)
+
+const pricesAda = [3, 3, 3, 3, 3]
+maxProfit(pricesAda) = // -> -1 (no hay ganancia posible)
+```

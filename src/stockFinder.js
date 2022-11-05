@@ -17,7 +17,7 @@ const isPresent = (section, product) => {
 export const stockFinder = (store, product) => {
     if(typeof store !== 'object' || Array.isArray(store) || Object.keys(store).length === 0 || 
         store.constructor !== Object || typeof product !== 'string' || product === '') {
-        throw new ('parameters should be and object and a string')
+        throw new Error('parameters should be and object and a string')
     }  
     return isPresent(store, product)
 }
